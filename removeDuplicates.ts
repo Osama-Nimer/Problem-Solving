@@ -1,13 +1,12 @@
 function removeDuplicates(nums: number[]): number {
-    let arr = [-200];
-    let index = 0;
+    let arr : number[] = [];
+
     for (let i = 0; i < nums.length; i++) {
         let num = nums[i];
         if (arr.includes(num)) {
             continue;
         } else {
-            arr[index] = num;
-            index++;
+            arr.push(num);
         }
     }
 
@@ -16,10 +15,6 @@ function removeDuplicates(nums: number[]): number {
     }
     return arr.length;
 };
-
-
-
-
 
 function removeDuplicates1(nums: number[]): number {
     let arr : number[] = [];
