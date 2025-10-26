@@ -6,10 +6,10 @@ function getCount(num: number, nums: number[]): number {
     return count;
   }
 
-function singleNumber(nums: number[]): number {
-  for (let i = 0; i < nums.length; i++) {
-    let num: number = getCount(nums[i],nums);
-    if (num === 1) return nums[i];
-  }
-  return 0;
-}
+// function singleNumber(nums: number[]): number {
+//   for (let i = 0; i < nums.length; i++) {
+//     let num: number = getCount(nums[i],nums);
+//     if (num === 1) return nums[i];
+//   }
+//   return 0;
+// }
