@@ -1,0 +1,20 @@
+public int countSegments(String s) {
+    int count = 0;
+    String w = "";
+
+    for (int i = 0; i < s.length(); i++) {
+        if (s.charAt(i) != ' ') {
+            w += s.charAt(i);
+        } else if (!w.equals("")) {
+            count++;
+            w = "";
+        }
+    }
+
+    // Count the last word if it exists
+    if (!w.equals("")) {
+        count++;
+    }
+
+    return count;
+}
